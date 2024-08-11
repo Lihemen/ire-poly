@@ -274,7 +274,17 @@
       .aspect-square {
         aspect-ratio: 1 / 1;
       }
+      .border-b-\[1rem\] {
+        border-bottom-width: 1rem;
+      }
 
+      .border-b-4 {
+        border-bottom-width: 4px;
+      }
+
+      .h-8 {
+        height: 2rem;
+      }
       .h-12 {
         height: 3rem;
       }
@@ -289,6 +299,9 @@
 
       .h-36 {
         height: 9rem;
+      }
+      .h-\[72px\] {
+        height: 72px;
       }
 
       .h-\[133\.82px\] {
@@ -881,6 +894,18 @@
           #09005f
         );
       }
+
+      .bg-\[url\(\'\/assets\/bg\/squiggle\.svg\'\)\] {
+        background-image: url("/assets/bg/squiggle.svg");
+      }
+
+      .bg-contain {
+        background-size: contain;
+      }
+
+      .bg-repeat-y {
+        background-repeat: repeat-y;
+      }
     </style>
   </head>
   <body>
@@ -1103,6 +1128,76 @@
             <p class="text-[8px] mt-1">Registrar's Signature</p>
           </div>
         </div>
+      </section>
+
+      <!-- ID CARD GROUP 3-->
+      <section class="w-id h-id bg-white flex flex-col">
+        <div
+          class="bg-brand-blue p-2 w-full text-left text-white border-b-4 border-brand-yellow flex items-center justify-center gap-6 z-[1]">
+          <!-- SCHOOL LOGO -->
+          <img
+            src="/assets/img/logo.png"
+            alt="Ire Poly Logo"
+            class="w-12 h-auto" />
+          <!-- SCHOOL LOCATION  -->
+          <div>
+            <h3 class="font-bold text-[10px] uppercase text-white">
+              OSUN STATE POLYTECHNIC
+            </h3>
+            <p class="text-white text-[7px]">P.M.B 301, IREE, OSUN STATE</p>
+            <p class="text-white text-[7px]">TEL: +234-808-7898-789</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col flex-1 relative pl-2 bg-[url('/assets/bg/squiggle.svg')] bg-repeat-y bg-contain">
+          <div class="flex h-full">
+            <!-- DEPARTMENT AND QR CODE FOR VERIFICATION -->
+            <div
+              class="bg-brand-yellow flex-[0.2] flex items-start justify-center relative pt-[12%]">
+              <h3 class="vertical-text text-brand-blue text-xs font-semibold">
+                CIVIL ENGINEERING TECHNOLOGY
+              </h3>
+
+              <!-- QR CODE -->
+              <div class="bg-white absolute bottom-3 z-[1] w-14 h-14">
+                <img
+                  src="/assets/img/QR Code.png"
+                  alt="QR Code"
+                  class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+            <!-- STUDENT DETAILS -->
+            <div class="flex-1 flex flex-col items-center text-left pt-6 gap-4">
+              <div class="w-10/12 rounded-xl bg-brand-gray pb-4">
+                <!-- STUDENT IMAGE -->
+                <img
+                  src="/assets/img/avatar.png"
+                  alt="Avatar"
+                  class="w-full rounded-t-xl" />
+              </div>
+              <div class="uppercase font-semibold w-10/12">
+                <!-- STUDENT NAME -->
+                <h4 class="text-brand-blue text-xs">OLANIBOJI EMMANUEL G.</h4>
+                <!-- STUDENT ID -->
+                <p class="text-[7px] space-x-2">
+                  <span class="text-brand-yellow">ID Number:</span
+                  ><span class="text-brand-blue">22/CEH/0910</span>
+                </p>
+                <p class="text-[7px] space-x-2">
+                  <span class="text-brand-yellow">Degree:</span
+                  ><span class="text-brand-blue">HND</span>
+                </p>
+                <p class="text-[7px] space-x-2">
+                  <span class="text-brand-yellow">Valid For:</span
+                  ><span class="text-brand-blue">2023/2024</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-brand-blue border-t-4 shrink-0 h-8 border-brand-yellow z-[1]"></div>
       </section>
     </div>
   </body>
