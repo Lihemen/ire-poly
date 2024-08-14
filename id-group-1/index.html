@@ -230,16 +230,15 @@
       .-bottom-8 {
         bottom: -2rem;
       }
-
+      .bottom-2 {
+        bottom: 0.5rem;
+      }
       .bottom-3 {
         bottom: 0.75rem;
       }
 
       .bottom-4 {
         bottom: 1rem;
-      }
-      .bottom-1 {
-        bottom: 0.25rem;
       }
 
       .left-0 {
@@ -248,9 +247,6 @@
 
       .right-0 {
         right: 0px;
-      }
-      .right-6 {
-        right: 1.5rem;
       }
 
       .z-\[1\] {
@@ -551,6 +547,9 @@
       .p-6 {
         padding: 1.5rem;
       }
+      .p-20 {
+        padding: 5rem;
+      }
 
       .pb-2 {
         padding-bottom: 0.5rem;
@@ -630,6 +629,10 @@
 
       .text-\[17\.51px\] {
         font-size: 17.51px;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
       }
 
       .text-\[20\.03px\] {
@@ -869,6 +872,9 @@
           var(--tw-backdrop-sepia);
       }
 
+      .right-14 {
+        right: 3.5rem;
+      }
       *,
       html {
         font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
@@ -887,10 +893,10 @@
           #09005f,
           #09005f 5%,
           #dfab46 5%,
-          #dfab46 15%,
-          #09005f 15%,
-          #09005f 22%,
-          white 22%,
+          #dfab46 13%,
+          #09005f 13%,
+          #09005f 19%,
+          white 19%,
           white 69.3%,
           #09005f 69.3%,
           #09005f 75%,
@@ -915,50 +921,59 @@
     </style>
   </head>
   <body>
-    <!-- THIS RENDITION IS IN APPROXIMATE SIZE . GOOD FOR RENDITION WITHIN THE CONTEXT OF AN APPLICATION-->
-    <div class="grid grid-flow-col gap-8 bg-gray-50">
+    <!-- THIS RENDITION IS IN PIXELS - GOOD FOR PRINTING AS THE SOFTWARE WILL CONVERT THE PIXELS TO MM or INCHES -->
+    <main class="grid grid-cols-2 gap-8 bg-gray-50">
       <!-- ID CARD GROUP 1-->
-      <section class="w-id h-id bg-white flex flex-col justify-between">
-        <div class="flex flex-col h-full relative pl-2">
+
+      <!-- FRONT-->
+      <section
+        id="frame-3"
+        class="w-card h-card bg-white flex flex-col justify-between">
+        <div class="flex flex-col h-full relative pl-10">
           <div class="flex h-full">
             <!-- DEPARTMENT AND QR CODE FOR VERIFICATION -->
             <div
-              class="bg-brand-yellow flex-[0.2] flex items-start justify-center relative pt-[12%]">
-              <h3 class="vertical-text text-brand-blue text-xs font-semibold">
+              class="bg-brand-yellow flex-[0.2] flex items-start justify-center relative pt-[15%]">
+              <!-- DEPARTMENT -->
+              <h3
+                class="vertical-text text-brand-blue text-[32.76px] font-semibold">
                 CIVIL ENGINEERING TECHNOLOGY
               </h3>
-
               <!-- QR CODE -->
-              <div class="bg-white absolute bottom-3 z-[1] w-14 h-14">
+              <div class="bg-white absolute bottom-4 z-[1] w-36 h-36">
                 <img
                   src="/assets/img/QR Code.png"
                   alt="QR Code"
                   class="w-full h-full object-cover" />
               </div>
             </div>
-
             <!-- STUDENT DETAILS -->
-            <div class="flex-1 flex flex-col items-center text-left pt-6 gap-4">
-              <div class="w-10/12 rounded-xl bg-brand-gray pb-4">
+            <div
+              class="flex-1 flex flex-col items-center text-left pt-12 gap-4">
+              <div class="w-10/12 rounded-4xl bg-brand-gray pb-8">
                 <!-- STUDENT IMAGE -->
                 <img
                   src="/assets/img/avatar.png"
                   alt="Avatar"
-                  class="w-full rounded-t-xl" />
+                  class="w-full rounded-t-4xl" />
               </div>
               <div class="uppercase font-semibold w-10/12">
                 <!-- STUDENT NAME -->
-                <h4 class="text-brand-blue text-xs">OLANIBOJI EMMANUEL G.</h4>
+                <h4 class="text-brand-blue text-[30.43px]">
+                  OLANIBOJI EMMANUEL G.
+                </h4>
                 <!-- STUDENT ID -->
-                <p class="text-[7px] space-x-2">
+                <p class="text-[23.81px] space-x-2">
                   <span class="text-brand-yellow">Matric No:</span
                   ><span class="text-brand-blue">22/CEH/0910</span>
                 </p>
-                <p class="text-[7px] space-x-2">
+                <!-- STUDENT Programme -->
+                <p class="text-[23.81px] space-x-2">
                   <span class="text-brand-yellow">Programme:</span
                   ><span class="text-brand-blue">HND</span>
                 </p>
-                <p class="text-[7px] space-x-2">
+                <!-- VALIDITY -->
+                <p class="text-[23.81px] space-x-2">
                   <span class="text-brand-yellow">Valid For:</span
                   ><span class="text-brand-blue">2023/2024</span>
                 </p>
@@ -969,54 +984,58 @@
             src="/assets/bg/squiggle.svg"
             alt="squiggle"
             aria-hidden="true"
-            class="absolute -bottom-8 left-0 right-0" />
+            class="absolute -bottom-12 left-0 right-0" />
         </div>
+
         <!-- SCHOOL LOCATION AND LOGO -->
         <div
-          class="bg-brand-blue p-2 w-full text-left text-white border-t-4 border-brand-yellow flex items-center justify-center gap-6 z-[1]">
+          class="bg-brand-blue p-4 w-full text-left text-white border-t-[1rem] border-brand-yellow flex items-center justify-center gap-6 z-[1]">
           <!-- SCHOOL LOGO -->
           <img
             src="/assets/img/logo.png"
             alt="Ire Poly Logo"
-            class="w-12 h-auto" />
+            class="w-[167px] h-auto" />
           <!-- SCHOOL LOCATION  -->
           <div>
-            <h3 class="font-bold text-[10px] uppercase text-white">
+            <h3 class="font-bold text-[26.67px] uppercase text-white">
               OSUN STATE POLYTECHNIC
             </h3>
-            <p class="text-white text-[7px]">P.M.B 301, IREE, OSUN STATE</p>
-            <p class="text-white text-[7px]">TEL: +234-808-7898-789</p>
+            <p class="text-white text-[17.51px]">P.M.B 301, IREE, OSUN STATE</p>
+            <p class="text-white text-[17.51px]">TEL: +234-808-7898-789</p>
           </div>
         </div>
       </section>
+
+      <!-- BACK-->
       <section
-        class="w-id h-id bg-white flex flex-col justify-between items-center gap-3 pt-6 pb-2">
-        <div class="w-full flex flex-col justify-between items-center gap-3">
+        id="frame-4"
+        class="w-card h-card bg-white flex flex-col justify-between items-center gap-6 pt-12 pb-8">
+        <div class="w-full flex flex-col justify-between items-center gap-6">
           <p
-            class="text-center text-brand-blue text-[10px] w-[73.50%] leading-tight font-medium">
+            class="text-center text-brand-blue text-[28px] w-[73.50%] leading-tight font-medium">
             This is to certify that the person whose photograph and name appear
             on this identity card is a student of
           </p>
-          <!-- SCHOOL LOCATION AND LOGO -->
           <div
-            class="bg-brand-blue p-2 w-full text-left text-white border-t-4 border-brand-yellow flex items-center justify-center gap-6 z-[1]">
-            <!-- SCHOOL LOGO -->
+            class="bg-brand-blue p-4 w-full text-left text-white border-t-[1rem] border-brand-yellow flex items-center justify-center gap-6">
             <img
               src="/assets/img/logo.png"
               alt="Ire Poly Logo"
-              class="w-12 h-auto" />
-            <!-- SCHOOL LOCATION  -->
+              class="w-[167px] h-auto" />
             <div>
-              <h3 class="font-bold text-[10px] uppercase text-white">
+              <h3 class="font-[800] text-[26.67px] uppercase text-white">
                 OSUN STATE POLYTECHNIC
               </h3>
-              <p class="text-white text-[7px]">P.M.B 301, IREE, OSUN STATE</p>
-              <p class="text-white text-[7px]">TEL: +234-808-7898-789</p>
+              <p class="text-white text-[17.51px] font-semibold">
+                P.M.B 301, IREE, OSUN STATE
+              </p>
+              <p class="text-white text-[17.51px] font-semibold">
+                TEL: +234-808-7898-789
+              </p>
             </div>
           </div>
-
           <div
-            class="text-[10px] text-center text-brand-blue w-[67.50%] font-medium">
+            class="text-[28px] text-center text-brand-blue w-[67.50%] font-medium">
             <p>
               This is an official document that is not transferrable and to be
               shown to any authorised person on demand.
@@ -1027,187 +1046,14 @@
             </p>
           </div>
         </div>
+
         <div class="flex flex-col w-full items-center">
-          <span class="inline-block bg-brand-blue w-8/12 h-[1px]"></span>
-          <p class="text-[8px] text-brand-blue font-medium">
+          <span class="inline-block bg-brand-blue w-8/12 h-[2px]"></span>
+          <p class="text-[24px] text-brand-blue font-medium">
             Registrar's Signature
           </p>
         </div>
       </section>
-
-      <!-- ID CARD GROUP 2-->
-      <section
-        class="w-id h-id stripped-bg flex items-center justify-center p-6 relative">
-        <div
-          class="border-brand-yellow border-[3px] bg-white/80 backdrop-blur-2xl flex flex-col h-full w-full items-center justify-between text-center ring-8 rounded-lg ring-black/20 text-brand-blue pb-2">
-          <div
-            class="flex flex-col items-center bg-brand-blue p-2 pb-6 text-white w-full rounded-t-md">
-            <!-- SCHOOL LOGO-->
-            <img
-              src="/assets/img/logo.png"
-              alt="School Logo"
-              class="h-12 mb-2 w-auto" />
-            <!-- SCHOOL DETAILS -->
-            <div>
-              <h3 class="font-[800] text-xs uppercase">
-                OSUN STATE POLYTECHNIC
-              </h3>
-              <p class="text-[8px] font-semibold">
-                P.M.B 301, IREE, OSUN STATE
-              </p>
-              <p class="text-[6px] font-medium">TEL: +234-808-7898-789</p>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col justify-between">
-            <div class="flex flex-col items-center -translate-y-3">
-              <!-- STUDENT IMAGE-->
-              <img
-                src="/assets/img/avatar.png"
-                alt="Avatar"
-                class="h-16 w-auto rounded-lg mb-2 border-2 border-white" />
-              <!-- STUDENT NAME-->
-              <h4 class="text-xs font-semibold uppercase">
-                OLANIBOJI EMMANUEL G.
-              </h4>
-              <!-- STUDENT DEPARTMENT-->
-              <p class="uppercase text-[10px] text-brand-yellow">
-                CIVIL ENGINEERING TECHNOLOGY
-              </p>
-            </div>
-            <div class="flex flex-col items-center gap-3 w-full">
-              <img
-                src="/assets/img/QR Code.png"
-                alt="QR Code"
-                class="w-12 aspect-square" />
-              <div
-                class="grid items-center justify-center w-full font-semibold">
-                <p class="text-[8px] space-x-2">
-                  <span class="text-brand-yellow">Matric No:</span
-                  ><span class="text-brand-blue">22/CEH/0910</span>
-                </p>
-                <p class="text-[8px] space-x-2 uppercase">
-                  <span class="text-brand-yellow">Programme:</span
-                  ><span class="text-brand-blue">HND</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="absolute bottom-1 right-6 text-[6px] text-brand-blue">
-          Valid till: 2023/2024
-        </p>
-      </section>
-      <section
-        class="w-id h-id stripped-bg flex items-center justify-center p-6">
-        <div
-          class="border-brand-yellow border-[3px] bg-white/80 backdrop-blur-2xl flex flex-col h-full w-full items-center justify-between text-center ring-8 rounded-lg ring-black/20 text-brand-blue p-2">
-          <p class="text-[9px] w-10/12 leading-snug">
-            This is to certify that the person whose photograph and name appear
-            on this identity card is a student of
-          </p>
-          <div class="flex flex-col items-center">
-            <!-- SCHOOL LOGO-->
-            <img
-              src="/assets/img/logo.png"
-              alt="School Logo"
-              class="h-12 mb-2 w-auto" />
-            <!-- SCHOOL DETAILS -->
-            <div>
-              <h3 class="font-[800] text-xs uppercase">
-                OSUN STATE POLYTECHNIC
-              </h3>
-              <p class="text-[7px] font-semibold">
-                P.M.B 301, IREE, OSUN STATE
-              </p>
-              <p class="text-[5px] font-medium">TEL: +234-808-7898-789</p>
-            </div>
-          </div>
-          <div class="text-[9px] w-10/12 leading-snug">
-            <p>
-              This is an official document that is not transferrable and to be
-              shown to any authorised person on demand.
-            </p>
-            <p>
-              If found, please return to the address above or nearest police
-              station.
-            </p>
-          </div>
-          <div class="flex flex-col w-full items-center">
-            <span class="inline-block bg-brand-blue w-9/12 h-[1px]"></span>
-            <p class="text-[8px] mt-1">Registrar's Signature</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ID CARD GROUP 3-->
-      <section class="w-id h-id bg-white flex flex-col">
-        <div
-          class="bg-brand-blue p-2 w-full text-left text-white border-b-4 border-brand-yellow flex items-center justify-center gap-6 z-[1]">
-          <!-- SCHOOL LOGO -->
-          <img
-            src="/assets/img/logo.png"
-            alt="Ire Poly Logo"
-            class="w-12 h-auto" />
-          <!-- SCHOOL LOCATION  -->
-          <div>
-            <h3 class="font-bold text-[10px] uppercase text-white">
-              OSUN STATE POLYTECHNIC
-            </h3>
-            <p class="text-white text-[7px]">P.M.B 301, IREE, OSUN STATE</p>
-            <p class="text-white text-[7px]">TEL: +234-808-7898-789</p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col flex-1 relative pl-2 bg-[url('/assets/bg/squiggle.svg')] bg-repeat-y bg-contain">
-          <div class="flex h-full">
-            <!-- DEPARTMENT AND QR CODE FOR VERIFICATION -->
-            <div
-              class="bg-brand-yellow flex-[0.2] flex items-start justify-center relative pt-[12%]">
-              <h3 class="vertical-text text-brand-blue text-xs font-semibold">
-                CIVIL ENGINEERING TECHNOLOGY
-              </h3>
-
-              <!-- QR CODE -->
-              <div class="bg-white absolute bottom-3 z-[1] w-14 h-14">
-                <img
-                  src="/assets/img/QR Code.png"
-                  alt="QR Code"
-                  class="w-full h-full object-cover" />
-              </div>
-            </div>
-
-            <!-- STUDENT DETAILS -->
-            <div class="flex-1 flex flex-col items-center text-left pt-6 gap-4">
-              <div class="w-10/12 rounded-xl bg-brand-gray pb-4">
-                <!-- STUDENT IMAGE -->
-                <img
-                  src="/assets/img/avatar.png"
-                  alt="Avatar"
-                  class="w-full rounded-t-xl" />
-              </div>
-              <div class="uppercase font-semibold w-10/12">
-                <!-- STUDENT NAME -->
-                <h4 class="text-brand-blue text-xs">OLANIBOJI EMMANUEL G.</h4>
-                <!-- STUDENT ID -->
-                <p class="text-[7px] space-x-2">
-                  <span class="text-brand-yellow">Matric No:</span
-                  ><span class="text-brand-blue">22/CEH/0910</span>
-                </p>
-                <p class="text-[7px] space-x-2">
-                  <span class="text-brand-yellow">Programme:</span
-                  ><span class="text-brand-blue">HND</span>
-                </p>
-                <p class="text-[7px] space-x-2">
-                  <span class="text-brand-yellow">Valid For:</span
-                  ><span class="text-brand-blue">2023/2024</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="bg-brand-blue border-t-4 shrink-0 h-8 border-brand-yellow z-[1]"></div>
-      </section>
-    </div>
+    </main>
   </body>
 </html>
